@@ -175,6 +175,7 @@ caption {
 form {
   display: flex;
   flex-direction: column;
+  -ms-flex-direction: column;
   padding-left: 1em;
   width: 80%;
 }
@@ -194,6 +195,7 @@ textarea {
 
   #mySubmit {
     grid-column: 2;
+    -ms-grid-column: 2;
     width: 9em;
   }
 
