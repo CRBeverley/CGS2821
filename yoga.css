@@ -1,7 +1,7 @@
 /* CGS 2821-3790
-  Module 4 Assignment Chapter 8
+  Module 5 Assignment Chapter 9
   By: Christopher Beverley
-  Date Due: 10 April 2022 */
+  Date Due: 17 April 2022 */
 
 /* layout */
 * {
@@ -27,9 +27,12 @@ header {
   min-height: 200px;
 }
 
+header a {
+  text-decoration: none;
+}
+
 header a:link,
 header a:visited {
-  text-decoration: none;
   color: #fff;
 }
 
@@ -168,8 +171,36 @@ caption {
   font-size: 120%;
 }
 
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  width: 80%;
+}
+input,
+textarea {
+  margin-bottom: 0.5em;
+}
+
 /* MEDIA Screen min 600px */
 @media screen and (min-width: 600px) {
+  form {
+    width: 60%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 12em 1fr;
+  }
+
+  #mySubmit {
+    grid-column: 2;
+    width: 9em;
+  }
+
+  label {
+    text-align: right;
+  }
+
   nav ul {
     flex-wrap: nowrap;
     justify-content: flex-end;
