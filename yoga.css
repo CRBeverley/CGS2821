@@ -1,7 +1,7 @@
 /* CGS 2821-3790
-  Module 5 Assignment Chapter 9
+  Module 6 Assignment Chapter 12
   By: Christopher Beverley
-  Date Due: 17 April 2022 */
+  Date Due: 24 April 2022 */
 
 /* layout */
 * {
@@ -85,12 +85,7 @@ nav li {
 }
 
 /* classes */
-.home {
-  height: 20vh;
-  padding-top: 2em;
-  padding-left: 10%;
-}
-
+.home,
 .content {
   height: 20vh;
   padding-top: 2em;
@@ -104,8 +99,6 @@ nav li {
 /* IDs */
 #wrapper {
   background-color: #f5f5f5;
-  /* min-width: 1200px;
-  max-width: 1480px; */
   padding: 2em;
 }
 
@@ -119,6 +112,13 @@ nav li {
 
 #loungehero {
   background-image: url(yogalounge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  display: none;
+}
+#storehero {
+  background-image: url(store.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
@@ -148,8 +148,7 @@ footer {
 
 /* Schedule Table */
 table {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 60%;
   border: 1px solid #3f2860;
   border-collapse: collapse;
@@ -179,6 +178,10 @@ form {
   padding-left: 1em;
   width: 80%;
 }
+section > form {
+  padding-bottom: 1em;
+}
+
 input,
 textarea {
   margin-bottom: 0.5em;
@@ -193,7 +196,7 @@ textarea {
     grid-template-columns: 12em 1fr;
   }
 
-  #mySubmit {
+  input[type="submit"] {
     grid-column: 2;
     -ms-grid-column: 2;
     width: 9em;
@@ -218,7 +221,8 @@ textarea {
   }
 
   #mathero,
-  #loungehero {
+  #loungehero,
+  #storehero {
     display: block;
     padding-bottom: 1em;
   }
