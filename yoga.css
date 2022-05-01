@@ -1,7 +1,7 @@
 /* CGS 2821-3790
-  Module 6 Assignment Chapter 12
+  Module 7 Assignment Chapter 14
   By: Christopher Beverley
-  Date Due: 24 April 2022 */
+  Date Due: 01 MAY 2022 */
 
 /* layout */
 * {
@@ -117,13 +117,6 @@ nav li {
   height: 300px;
   display: none;
 }
-#storehero {
-  background-image: url(store.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
-  display: none;
-}
 
 #mobile {
   display: inline;
@@ -178,13 +171,15 @@ form {
   padding-left: 1em;
   width: 80%;
 }
-section > form {
-  padding-bottom: 1em;
-}
-
 input,
 textarea {
   margin-bottom: 0.5em;
+}
+
+/* Audio */
+audio {
+  display: block;
+  margin: 1em;
 }
 
 /* MEDIA Screen min 600px */
@@ -201,6 +196,11 @@ textarea {
     -ms-grid-column: 2;
     width: 9em;
   }
+  /* #mySubmit {
+    grid-column: 2;
+    -ms-grid-column: 2;
+    width: 9em;
+  } */
 
   label {
     text-align: right;
@@ -221,8 +221,7 @@ textarea {
   }
 
   #mathero,
-  #loungehero,
-  #storehero {
+  #loungehero {
     display: block;
     padding-bottom: 1em;
   }

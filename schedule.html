@@ -1,8 +1,8 @@
 <!-- 
    CGS 2821-3790
-  Module 6 Assignment Chapter 12
+  Module 7 Assignment Chapter 14
   By: Christopher Beverley
-  Date Due: 24 April 2022
+  Date Due: 01 MAY 2022
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Path of Light Yoga Studio :: Schedule</title>
     <link rel="stylesheet" href="yoga.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      // Add date last modified to footer div
+      $(document).ready(function () {
+        $("footer div").html(
+          "This page was last modified on: " + document.lastModified
+        );
+      });
+    </script>
   </head>
   <body>
     <!-- !Header -->
@@ -25,7 +34,6 @@
         <li><a href="classes.html">Classes</a></li>
         <li><a href="schedule.html">Schedule</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="store.html">Store</a></li>
       </ul>
     </nav>
 
@@ -110,6 +118,7 @@
         Copyright &copy; 2020 Path of Light Yoga Studio
         <br />
         <a href="mailto:Christopher@Beverley.com">Christopher@Beverley.com</a>
+        <div></div>
       </footer>
     </div>
   </body>

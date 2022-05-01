@@ -1,8 +1,8 @@
 <!-- 
    CGS 2821-3790
-  Module 6 Assignment Chapter 12
+  Module 7 Assignment Chapter 14
   By: Christopher Beverley
-  Date Due: 24 April 2022
+  Date Due: 01 MAY 2022
  -->
 
 <!DOCTYPE html>
@@ -13,6 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Path of Light Yoga Studio :: Classes</title>
     <link rel="stylesheet" href="yoga.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      // Popup alert for new classes
+      $(document).ready(function () {
+        alert("Yin Yoga classes begin next month!");
+      });
+    </script>
   </head>
   <body>
     <!-- !Header -->
@@ -26,7 +34,6 @@
         <li><a href="classes.html">Classes</a></li>
         <li><a href="schedule.html">Schedule</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="store.html">Store</a></li>
       </ul>
     </nav>
 
@@ -66,6 +73,11 @@
             </p>
           </section>
         </div>
+        <audio controls="controls">
+          <source src="savasana.mp3" type="audio/mpeg" />
+          <source src="savasana.ogg" type="audio/ogg" />
+          <a href="savasana.mp3">Download Savasana mp3</a>
+        </audio>
         <div id="mathero"></div>
       </main>
 
